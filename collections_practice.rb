@@ -1,13 +1,13 @@
 def sort_array_asc(array)
-  return array.sort()
+  array.sort()
 end
 
 def sort_array_desc(array)
-  return array.sort_by { |e| -e }
+  array.sort_by { |e| -e }
 end
 
 def sort_array_char_count(array)
-  return array.sort_by { |e| e.size}
+  array.sort_by { |e| e.size}
 end
 
 def swap_elements(array)
@@ -42,6 +42,5 @@ end
 
 def add_s(array)
   array.each_with_index { |n, i| n << "s" if i != 1 }
-  return array
 end
 
